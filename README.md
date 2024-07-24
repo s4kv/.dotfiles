@@ -41,6 +41,7 @@ To use these dotfiles, follow these steps:
 
 - **Updating**: Pull the latest changes and run `./install.sh` again to update configurations.
 - **Customization**: Fork this repository and modify it to suit your needs.
+- **Repolution**: Run `./polute.sh` to remove all symlinks and restore the original files.
 
 ## Structure
 
