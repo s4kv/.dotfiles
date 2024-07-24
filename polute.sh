@@ -27,6 +27,6 @@ cp -r ~/.config/rofi/ .config/
 cp -r ~/.config/wired .config/
 
 # git add, commit, and push
-# git add .
-# git commit -m "polute"
-# git push
+git add .
+git commit -m "polute"
+git push
