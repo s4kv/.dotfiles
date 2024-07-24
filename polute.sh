@@ -6,7 +6,7 @@ if [ ! -f polute.sh ]; then
 fi
 
 # Remove all the files from the directory except the script, the README.md, and .git
-find . -maxdepth 1 -type f | grep -v -E '(polute.sh|README.md|.git)' | xargs rm -f
+find . -maxdepth 1 -type f | grep -v -E '(pkglist.txt|polute.sh|README.md|.git)' | xargs rm -f
 rm -rf .config
 
 mkdir .config
@@ -17,6 +17,7 @@ cp ~/.xinitrc .xinitrc
 cp ~/.Xauthority .Xauthority
 cp -r ~/.config/Thunar/ .config/
 cp -r ~/.config/bspwm/ .config/
+cp -r ~/.config/sxhkd/ .config/
 cp -r ~/.config/kitty/ .config/
 cp -r ~/.config/neofetch/ .config/
 cp -r ~/.config/nitrogen/ .config/
