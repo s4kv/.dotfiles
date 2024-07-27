@@ -52,5 +52,8 @@ znap source zsh-users/zsh-completions
 # ZOXIDE
 eval "$(zoxide init zsh)"
 
+# ZOXIDE
+eval $(thefuck --alias)
 
-
+# Cargo
+export PATH="$PATH:$HOME/.cargo/bin"

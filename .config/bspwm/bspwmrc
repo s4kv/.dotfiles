@@ -18,17 +18,17 @@ pkill polybar
 # pkill dunst
 
 # AutoStart applications
+xsetroot -cursor_name left_ptr &
 xrandr --output HDMI-0 --scale '1.7x1.7' &
-# rog-control-center &
 sxhkd &
 picom --config $HOME/.config/picom/picom.conf &
 nitrogen --restore &
 wired &
-# dunst &
 polybar &
+# dunst &
 blueman-applet &
-
-xsetroot -cursor_name left_ptr
+nm-applet $
+xsetroot -cursor_name left_ptr &
 
 # bspc rule -a Gimp desktop='^8' state=floating follow=on
 # bspc rule -a Chromium desktop='^2'
