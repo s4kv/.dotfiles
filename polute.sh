@@ -5,7 +5,7 @@ if [ ! -f polute.sh ]; then
     exit 1
 fi
 
-# Remove all the files from the directory except the script, the README.md, and .git
+# Remove all the files from the directory except the script, the README.md, and  .git
 find . -maxdepth 1 -type f | grep -v -E '(pkglist.txt|polute.sh|README.md|.git)' | xargs rm -f
 rm -rf .config
 
