@@ -52,9 +52,13 @@ The repository is structured as follows:
 - **`scripts/`**: Utility scripts used during installation or for specific tasks.
 - **`README.md`**: This file you are reading right now.
 
-## Contributing
+## Updating
 
-Feel free to fork this repository, make changes, and submit pull requests. Contributions, suggestions, and improvements are welcome!
+Run the following commands to update the repository:
+
+```sh
+git pull origin main
+```
 
 ## License
 
