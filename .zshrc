@@ -7,9 +7,10 @@ prompt pure
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=1000
+HISTSIZE=1000000000
+SAVEHIST=1000000000
 setopt autocd extendedglob nomatch notify
+setopt INC_APPEND_HISTORY
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install

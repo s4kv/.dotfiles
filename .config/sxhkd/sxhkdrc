@@ -23,6 +23,17 @@ super + z
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# clipboard
+super + v
+    clipcat-menu
+
+#
+# editor configuration
+#
+super + e
+    kitty -e nvim
+super + shift + e
+    code
 
 #
 # bspwm hotkeys
@@ -157,8 +168,8 @@ XF86MonBrightnessDown
 #
 # screenshot
 #
-super + Print
-    flameshot gui
+super + shift + s
+    flameshot gui -c -s
 super + shift + Print
     flameshot full -c
 super + ctrl + Print

@@ -13,18 +13,18 @@ bspc config gapless_monocle true
 
 # Kill applications if they are running already
 pkill picom
-pkill sxhkd
 pkill polybar
 # pkill dunst
 
 # AutoStart applications
+flameshot &
 xsetroot -cursor_name left_ptr &
 xrandr --output HDMI-0 --scale '1.7x1.7' &
-sxhkd &
 picom --config $HOME/.config/picom/picom.conf &
 nitrogen --restore &
 wired &
 polybar &
+clipcatd &
 # dunst &
 blueman-applet &
 nm-applet $
@@ -35,3 +35,6 @@ xsetroot -cursor_name left_ptr &
 # bspc rule -a mplayer2 state=floating
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
+#
+# remember that i am using auto-cpu-freq to manage cpu frequency
+# so i don't need to set the governor here
