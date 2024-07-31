@@ -1,3 +1,11 @@
+#
+# other movements
+#
+
+# move to the next/previous monitor
+super + {comma,period}
+    bspc monitor -f {prev,next}
+
 
 #
 # wm independent hotkeys
@@ -26,6 +34,14 @@ super + Escape
 # clipboard
 super + v
     clipcat-menu
+
+# whatsapp 
+super + shift + a
+    firefox --new-window https://web.whatsapp.com
+
+# ani-cli
+super + ctrl + a
+    ani-cli --rofi
 
 #
 # editor configuration
@@ -192,9 +208,9 @@ super + ctrl +  shift + p
 #
 # keyboard light
 #
-F2
+XF86KbdBrightnessDown
     asusctl -k {off,low,med,high}
-F3
+XF86KbdBrightnessUp
     asusctl -k high
 
 

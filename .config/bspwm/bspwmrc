@@ -2,7 +2,14 @@
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+# bspc monitor -d I II III IV V VI VII VIII IX X
+# two monitors DP
+if xrandr | grep "HDMI-0 connected"; then
+    bspc monitor DP-1 -d I II III IV V VI VII
+    bspc monitor HDMI-0 -d VIII IX X
+else
+    bspc monitor HDMI-0 -d I II III IV V VI VII
+fi
 
 bspc config border_width 2
 bspc config window_gap 12
@@ -17,11 +24,11 @@ pkill polybar
 # pkill dunst
 
 # AutoStart applications
+nitrogen --restore &
 flameshot &
 xsetroot -cursor_name left_ptr &
 xrandr --output HDMI-0 --scale '1.7x1.7' &
 picom --config $HOME/.config/picom/picom.conf &
-nitrogen --restore &
 wired &
 polybar &
 clipcatd &
@@ -29,6 +36,7 @@ clipcatd &
 blueman-applet &
 nm-applet $
 xsetroot -cursor_name left_ptr &
+slimbookbattery --minimaze &
 
 # bspc rule -a Gimp desktop='^8' state=floating follow=on
 # bspc rule -a Chromium desktop='^2'
