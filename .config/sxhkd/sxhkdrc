@@ -6,7 +6,6 @@
 super + {comma,period}
     bspc monitor -f {prev,next}
 
-
 #
 # wm independent hotkeys
 #
@@ -21,7 +20,7 @@ super + shift + f
 
 # program launcher
 super + @space
-	rofi -show drun -dpi 1
+	rofi -show drun -dpi 1 -show-icons
 
 # window switcher
 super + z
@@ -42,6 +41,10 @@ super + shift + a
 # ani-cli
 super + ctrl + a
     ani-cli --rofi
+
+# kill / start picom
+super + ctrl + p
+    pkill picom || picom
 
 #
 # editor configuration
@@ -85,7 +88,7 @@ super + {t,shift + t,s,f}
 
 # set the node flags
 super + ctrl + {m,x,y,z}
-	bspc node -g {marked,locked,sticky,private}
+	bspc node -g {marked,locked,sticky,rivate}
 #
 # focus/swap
 #

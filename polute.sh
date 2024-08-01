@@ -8,13 +8,16 @@ fi
 # Remove all the files from the directory except the script, the README.md, and  .git
 find . -maxdepth 1 -type f | grep -v -E '(install.sh|pkglist.txt|polute.sh|README.md|.git|powertop.service)' | xargs rm -f
 rm -rf .config
+rm -rf Backgrounds
 
+mkdir Backgrounds
 mkdir .config
 cp ~/.zshrc .zshrc
 cp ~/.zshenv .zshenv
 cp ~/.Xresources .XresourceS
 cp ~/.xinitrc .xinitrc
 cp ~/.Xauthority .Xauthority
+cp -r ~/Backgrounds/ .
 cp -r ~/.config/Thunar/ .config/
 cp -r ~/.config/bspwm/ .config/
 cp -r ~/.config/sxhkd/ .config/
