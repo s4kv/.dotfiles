@@ -16,7 +16,7 @@ cp ~/.zshrc .zshrc
 cp ~/.zshenv .zshenv
 cp ~/.Xresources .XresourceS
 cp ~/.xinitrc .xinitrc
-cp ~/.Xauthority .Xauthority
+# cp ~/.Xauthority .Xauthority
 cp -r ~/Backgrounds/ .
 cp -r ~/.config/Thunar/ .config/
 cp -r ~/.config/bspwm/ .config/
