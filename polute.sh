@@ -14,7 +14,7 @@ mkdir Backgrounds
 mkdir .config
 cp ~/.zshrc .zshrc
 cp ~/.zshenv .zshenv
-cp ~/.Xresources .XresourceS
+cp ~/.Xresources .Xresources
 cp ~/.xinitrc .xinitrc
 # cp ~/.Xauthority .Xauthority
 cp -r ~/Backgrounds/ .
