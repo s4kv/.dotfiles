@@ -1,6 +1,6 @@
 alsa-firmware
 alsa-utils
-auto-cpufreq
+ani-cli-git
 awesome-terminal-fonts
 base
 base-devel
@@ -9,6 +9,7 @@ blueman
 bluez-utils
 bspwm
 btop
+cbonsai
 clipcat
 cmatrix
 discord
@@ -29,11 +30,17 @@ htop
 kitty
 ldns
 lib32-pipewire
+libreoffice-fresh
+lightdm-slick-greeter
+linux-headers
+man-pages
 neofetch
 neovim
 network-manager-applet
+nitch
 nsxiv
 nvidia
+obs-studio
 otf-aurulent-nerd
 otf-codenewroman-nerd
 otf-comicshanns-nerd
@@ -55,11 +62,12 @@ playerctl
 polybar
 powertop
 ripgrep
-rofi
+rofi-emoji
 rp-pppoe
 rust-analyzer
 rxvt-unicode
 sherlock-git
+slimbookbattery
 spotify
 steam
 stow
@@ -131,7 +139,6 @@ xorg-fonts-100dpi
 xorg-fonts-75dpi
 xorg-iceauth
 xorg-mkfontscale
-xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
 xorg-sessreg
@@ -158,4 +165,5 @@ xorg-xwayland
 xorg-xwd
 xorg-xwud
 xsecurelock
+yay
 zoxide
