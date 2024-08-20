@@ -4,11 +4,16 @@ pgrep -x sxhkd >/dev/null || sxhkd &
 
 # bspc monitor -d I II III IV V VI VII VIII IX X
 # two monitors DP
+# my monitor in lima
+# if xrandr | grep "HDMI-0 connected"; then
+#     bspc monitor DP-1 -d I II III IV V VI VII
+#     bspc monitor HDMI-0 -d VIII IX X
+# my monitor in usa
 if xrandr | grep "HDMI-0 connected"; then
-    bspc monitor DP-1 -d I II III IV V VI VII
-    bspc monitor HDMI-0 -d VIII IX X
+    bspc monitor DP-1 -d IV V VI VII VIII IX X
+    bspc monitor HDMI-0 -d I II III
 else
-    bspc monitor HDMI-0 -d I II III IV V VI VII
+    bspc monitor DP-1 -d I II III IV V VI VII VIII IX X
 fi
 
 # bspc config border_width 2
@@ -29,7 +34,7 @@ pkill polybar
 nitrogen --restore &
 flameshot &
 xsetroot -cursor_name left_ptr &
-xrandr --output HDMI-0 --scale '1.7x1.7' &
+xrandr --output HDMI-0 --scale '1.6x1.6' &
 picom --config $HOME/.config/picom/picom.conf &
 wired &
 polybar &
