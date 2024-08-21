@@ -36,8 +36,10 @@ flameshot &
 xsetroot -cursor_name left_ptr &
 xrandr --output HDMI-0 --scale '1.6x1.6' &
 picom --config $HOME/.config/picom/picom.conf &
+slimbookbattery --minimize &
 wired &
 polybar &
+pasystray &
 clipcatd &
 # dunst &
 blueman-applet &
