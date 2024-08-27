@@ -1,6 +1,7 @@
 alsa-firmware
 alsa-utils
 ani-cli-git
+auto-cpufreq
 awesome-terminal-fonts
 base
 base-devel
@@ -41,6 +42,7 @@ nitch
 nsxiv
 nvidia
 obs-studio
+obsidian
 otf-aurulent-nerd
 otf-codenewroman-nerd
 otf-comicshanns-nerd
@@ -56,11 +58,13 @@ otf-overpass-nerd
 p7zip
 paru
 paru-debug
+pasystray
 picom
 pipes.sh
 playerctl
 polybar
 powertop
+qbittorrent
 ripgrep
 rofi-emoji
 rp-pppoe
