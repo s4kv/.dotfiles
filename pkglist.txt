@@ -22,6 +22,7 @@ ferdium
 firefox
 flameshot
 github-cli
+gleam
 go
 google-earth-pro
 gparted

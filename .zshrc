@@ -25,6 +25,7 @@ alias ls='exa'
 alias grep='grep --color=auto'
 alias cat='bat'
 alias cd='z'
+alias checkstyle='java -jar /home/sakvi/gatech/cs1332/checkstyle/checkstyle-10.14.2-all.jar -c /home/sakvi/gatech/cs1332/checkstyle/CS1332-checkstyle.xml'
 
 # xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
 

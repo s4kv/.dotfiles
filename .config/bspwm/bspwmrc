@@ -25,9 +25,14 @@ bspc config split_ratio 0.52
 bspc config borderless_monocle true
 bspc config gapless_monocle true
 
+bspc config normal_border_color "#110b0d"
+
 # Kill applications if they are running already
 pkill picom
 pkill polybar
+# pkill clipcatd
+pkill pasystray
+pkill slimbookbattery
 # pkill dunst
 
 # AutoStart applications
