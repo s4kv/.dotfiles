@@ -6,6 +6,8 @@ My personal dotfiles configuration.
 
 These are my personal dotfiles. They are tailored to my workflow and preferences, and I use them to quickly set up my development environment on any new machine.
 
+![Screenshot](./images/Arch Linux Set-Up.png)
+
 ## Features
 
 - **Efficiency**: Optimized for speed and productivity.

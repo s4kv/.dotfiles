@@ -60,3 +60,12 @@ xsetroot -cursor_name left_ptr &
 #
 # remember that i am using auto-cpu-freq to manage cpu frequency
 # so i don't need to set the governor here
+
+# TODO: find a way to make this work
+# Open steam games in X workspace
+steamlib="$HOME/.local/share/Steam"
+mygames=$(ls $steamlib/steamapps/appmanifest_*.acf | sed 's/[^0-9]*//g') # this sed command removes everything but the digits
+
+for game in $mygames; do
+    bspc rule -a steam_app_$game desktop=^10 state=fullscreen
+done

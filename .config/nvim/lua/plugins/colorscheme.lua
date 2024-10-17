@@ -59,6 +59,7 @@ return {
         "ramojus/mellifluous.nvim",
     },
 
+    -- dark theme
     {
         "LazyVim/LazyVim",
         opts = {
@@ -66,4 +67,11 @@ return {
             background = "dark",
         },
     },
+    -- light theme
+    -- {
+    --     "LazyVim/LazyVim",
+    --     opts = {
+    --         colorscheme = "catppuccin-latte",
+    --     },
+    -- },
 }

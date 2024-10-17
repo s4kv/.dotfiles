@@ -56,8 +56,11 @@ super + Escape
 #                      editor configuration                       #
 #=================================================================#
 
+# open nvim
 super + e
     kitty -e nvim
+
+# open vscode
 super + shift + e
     code
 

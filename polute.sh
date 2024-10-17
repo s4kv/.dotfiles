@@ -6,7 +6,7 @@ if [ ! -f polute.sh ]; then
 fi
 
 # Remove all the files from the directory except the script, the README.md, and  .git
-find . -maxdepth 1 -type f | grep -v -E '(install.sh|pkglist.txt|polute.sh|README.md|.git|powertop.service)' | xargs rm -f
+find . -maxdepth 1 -type f | grep -v -E '(install.sh|pkglist.txt|polute.sh|README.md|.git|powertop.service|images)' | xargs rm -f
 rm -rf .config
 rm -rf Backgrounds
 
