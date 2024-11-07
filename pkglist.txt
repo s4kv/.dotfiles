@@ -4,7 +4,6 @@ ani-cli-git
 auto-cpufreq
 awesome-terminal-fonts
 base
-base-devel
 blackarch-keyring
 blueman
 bluez-utils
@@ -17,6 +16,7 @@ discord
 dmenu
 dsniff
 dunst
+elixir
 eza
 ferdium
 firefox
@@ -38,12 +38,14 @@ libreoffice-fresh
 lightdm-slick-greeter
 linux-headers
 man-pages
+mesa-utils
 neofetch
 neovim
 network-manager-applet
 nitch
 nsxiv
 nvidia
+nvidia-prime-rtd3pm
 obs-studio
 obsidian
 otf-aurulent-nerd
@@ -62,7 +64,6 @@ p7zip
 paru
 paru-debug
 pasystray
-picom
 pipes.sh
 playerctl
 polybar
@@ -82,11 +83,25 @@ texlive-bibtexextra
 texlive-binextra
 texlive-context
 texlive-fontsextra
-texlive-fontutils
 texlive-formatsextra
 texlive-games
 texlive-humanities
-texlive-latexextra
+texlive-langarabic
+texlive-langchinese
+texlive-langcyrillic
+texlive-langczechslovak
+texlive-langenglish
+texlive-langeuropean
+texlive-langfrench
+texlive-langgerman
+texlive-langgreek
+texlive-langitalian
+texlive-langjapanese
+texlive-langkorean
+texlive-langother
+texlive-langpolish
+texlive-langportuguese
+texlive-langspanish
 texlive-luatex
 texlive-mathscience
 texlive-metapost
@@ -97,6 +112,7 @@ texlive-xetex
 thefuck
 thunar
 tldr
+tree
 ttf-0xproto-nerd
 ttf-3270-nerd
 ttf-agave-nerd
@@ -147,6 +163,7 @@ ttf-sharetech-mono-nerd
 ttf-sourcecodepro-nerd
 ttf-space-mono-nerd
 ttf-terminus-nerd
+ttf-times-new-roman
 ttf-tinos-nerd
 ttf-ubuntu-mono-nerd
 ttf-ubuntu-nerd
@@ -156,6 +173,7 @@ udisks2
 vi
 visual-studio-code-bin
 wired
+xf86-video-amdgpu
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
@@ -176,6 +194,7 @@ xorg-xdriinfo
 xorg-xev
 xorg-xgamma
 xorg-xinit
+xorg-xinput
 xorg-xkbevd
 xorg-xkbprint
 xorg-xkbutils
@@ -191,4 +210,5 @@ xorg-xwd
 xorg-xwud
 xsecurelock
 yay
+zoom
 zoxide
