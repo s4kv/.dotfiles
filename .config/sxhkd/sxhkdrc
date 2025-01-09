@@ -14,7 +14,8 @@
 
 # terminal emulator
 super + Return
-	kitty
+    ghostty
+	# kitty
 
 # firefox
 super + shift + f
@@ -58,7 +59,8 @@ super + Escape
 
 # open nvim
 super + e
-    kitty -e nvim
+    ghostty -e nvim
+    # kitty -e nvim
 
 # open vscode
 super + shift + e

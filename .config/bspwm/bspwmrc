@@ -8,10 +8,18 @@ pgrep -x sxhkd >/dev/null || sxhkd &
 # if xrandr | grep "HDMI-0 connected"; then
 #     bspc monitor DP-1 -d I II III IV V VI VII
 #     bspc monitor HDMI-0 -d VIII IX X
-# my monitor in usa
+# my monitor in usa (PAST LAYOUT)
+# if xrandr | grep "HDMI-0 connected"; then
+#     bspc monitor DP-1 -d IV V VI VII VIII IX X
+#     bspc monitor HDMI-0 -d I II III
+# else
+#     bspc monitor DP-1 -d I II III IV V VI VII VIII IX X
+# fi
+
+# Config monitor new layout
 if xrandr | grep "HDMI-0 connected"; then
-    bspc monitor DP-1 -d IV V VI VII VIII IX X
-    bspc monitor HDMI-0 -d I II III
+    bspc monitor DP-1 -d I II III
+    bspc monitor HDMI-0 -d IV V VI VII VIII IX X
 else
     bspc monitor DP-1 -d I II III IV V VI VII VIII IX X
 fi
@@ -46,11 +54,22 @@ wired &
 polybar &
 pasystray &
 clipcatd &
+# change battery profile
+~/.config/bspwm/battery-profile.sh &
 # dunst &
 blueman-applet &
 nm-applet $
 # slimbookbattery &
 xsetroot -cursor_name left_ptr &
+
+# asuscommands:
+# asusctl bios -D 0 # MUX switch to: 0 = Discrete GPU, 1 = Optimus
+# asusctl profile -l # list profiles
+# asusctl profile -n # toggle between profiles
+# asusctl profile -P Performance # set profile to performance
+# asusctl profile -P Balanced # set profile to balanced
+# asusctl profile -P Quiet # set profile to quiet
+# asusctl profile -p # show current profiles
 
 # bspc rule -a Gimp desktop='^8' state=floating follow=on
 # bspc rule -a Chromium desktop='^2'
@@ -60,6 +79,8 @@ xsetroot -cursor_name left_ptr &
 #
 # remember that i am using auto-cpu-freq to manage cpu frequency
 # so i don't need to set the governor here
+# make zoom always floating
+bspc rule -a zoom desktop='^8' state=floating
 
 # TODO: find a way to make this work
 # Open steam games in X workspace
