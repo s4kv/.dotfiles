@@ -60,3 +60,8 @@ eval $(thefuck --alias)
 
 # Cargo
 # export PATH="$PATH:$HOME/.cargo/bin"
+
+
+# Exports:
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8

@@ -43,6 +43,8 @@ pkill pasystray
 pkill slimbookbattery
 # pkill dunst
 
+# Power manager
+xfce4-power-manager &
 # AutoStart applications
 nitrogen --restore &
 flameshot &
@@ -51,7 +53,12 @@ xrandr --output HDMI-0 --scale '1.6x1.6' &
 picom --config $HOME/.config/picom/picom.conf &
 slimbookbattery --minimize &
 wired &
-polybar &
+# polybar &
+if xrandr | grep "HDMI-0 connected"; then
+    polybar --reload --config=$HOME/.config/polybar/monitor/config.ini &
+else
+    polybar --reload &
+fi
 pasystray &
 clipcatd &
 # change battery profile
