@@ -1,7 +1,7 @@
 (
     // Maximum number of notifications to show at any one time.
     // A value of 0 means that there is no limit.
-    max_notifications: 0,
+    max_notifications: 50,
 
     // The default timeout, in miliseconds, for notifications that don't have an initial timeout set.
     // 1000ms = 1s.
